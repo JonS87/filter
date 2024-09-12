@@ -1,11 +1,11 @@
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: flex-start;
+  column-count: 3; /* Количество колонок */
+  column-gap: 15px; /* Отступы между колонками */
 }
 
 .card {
-  flex: 1 1 calc(33.333% - 10px);
-  box-sizing: border-box;
+  width: 100%; /* Подгоняем ширину изображения под размер колонки */
+  display: block; /* Убираем отступы у изображений */
+  margin-bottom: 15px; /* Отступы между изображениями */
+  break-inside: avoid; /* Предотвращает разрыв изображения внутри колонки */
 }
